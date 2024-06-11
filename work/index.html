@@ -9,30 +9,30 @@
   </head>
   <body>
     <div id="calculator">
-      <input type="text" id="display" disabled />
+      <input type="text" id="display" disabled value=""/>
       <div class="number-row">
-        <button class="number" data-number="1">1</button>
-        <button class="number" data-number="2">2</button>
-        <button class="number" data-number="3">3</button>
-        <button class="operator" data-operator="+">+</button>
+        <button class="number" data-number="1" onclick="getCalc(this)">1</button>
+        <button class="number" data-number="2" onclick="getCalc(this)">2</button>
+        <button class="number" data-number="3" onclick="getCalc(this)">3</button>
+        <button class="operator" data-operator="+"  onclick="getCalc(this)">+</button>
       </div>
       <div class="number-row">
-        <button class="number" data-number="4">4</button>
-        <button class="number" data-number="5">5</button>
-        <button class="number" data-number="6">6</button>
-        <button class="operator" data-operator="-">-</button>
+        <button class="number" data-number="4" onclick="getCalc(this)">4</button>
+        <button class="number" data-number="5" onclick="getCalc(this)">5</button>
+        <button class="number" data-number="6" onclick="getCalc(this)">6</button>
+        <button class="operator" data-operator="-"  onclick="getCalc(this)">-</button>
       </div>
       <div class="number-row">
-        <button class="number" data-number="7">7</button>
-        <button class="number" data-number="8">8</button>
-        <button class="number" data-number="9">9</button>
-        <button class="operator" data-operator="*">*</button>
+        <button class="number" data-number="7" onclick="getCalc(this)">7</button>
+        <button class="number" data-number="8" onclick="getCalc(this)">8</button>
+        <button class="number" data-number="9" onclick="getCalc(this)">9</button>
+        <button class="operator" data-operator="*" onclick="getCalc(this)">*</button>
       </div>
       <div class="function-row">
-        <button class="clear" data-clear="all">C</button>
-        <button class="number" data-number="0">0</button>
-        <button class="equals" data-equals="=">=</button>
-        <button class="operator" data-operator="/">/</button>
+        <button class="clear" data-clear="all" onclick="getCalc(this)">C</button>
+        <button class="number" data-number="0" onclick="getCalc(this)">0</button>
+        <button class="equals" data-equals="=" onclick="getCalc(this)">=</button>
+        <button class="operator" data-operator="/" onclick="getCalc(this)">/</button>
       </div>
     </div>
     <script src="js/app.js"></script>
