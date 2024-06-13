@@ -6,7 +6,7 @@ function getCalc(btn) {
   const dataClear = btn.dataset.clear;
   const dataEquals = btn.dataset.equals;
   if (dataEquals === "=") {
-    display.value = eval(display.value);
+    display.value = Function('return('+display.value+');')();
   } else if (dataClear === "all") {
     display.value = "";
   } else {
